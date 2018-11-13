@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=10">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Charmonman|Roboto+Condensed" rel="stylesheet">
+   <link rel="stylesheet" href="./stylesheet.css"/>
+   <title>Attraction by Design | Components</title>
+</head>
+<body>
+
+   <header>
+        <div class="logo">Attraction by Design</div>
+        <p class="tag-line">If it catches your attention, design did it.</p>
+        <nav class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a class="current-page" href="components.html">Components</a></li>
+            </ul>
+        </nav>   
+   </header>
+<main>
+<h2>Components</h2>
+<nav class="secondary-nav">
+        
+<h5>On This Page you will find</h5>  
+    <ul>
+        <li><a href="#button-links">Button Links</a></li>
+        <li><a href="#accordions">Accordions</a></li>
+        <li><a href="#modal-dialogs">Modal Dialogs</a></li>
+        <li><a href="#form-inputs">Form Inputs</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#hero-block">Hero Block</a></li> 
+        <li><a href="#information-card">Information Card</a></li>
+        <li><a href="#layouts">Layouts</a></li>
+    </ul>
+</nav>
+
+<h2 id="button-links">Button Links</h2>
+    
+<h4>Hero Button</h4>
+        
+<figure>
+    <a href="" class="button-hero">Hero</a>
+</figure>
+
+<h4>Normal Button</h4>
+
+<figure class="button-examples">
+    <a href class="button-normal">Normal</a>     
+</figure>
+
+<h4>Ghost Button</h4>
+<figure>
+    <a href class="button-ghost">Ghost</a>
+</figure>
+
+<h2 id="accordions">Accordion</h2>        
+    <details>
+        <summary>This is the first example.</summary>
+        <div>
+            <p>It is an example because I say so.</p>
+        </div>
+    </details>
+    <details>   
+        <summary>This is the second example.</summary>
+        <div>
+            <p>It is an example because I say so.</p>
+        </div>
+    </details> 
+    <details>   
+        <summary>This is the third example.</summary>
+        <div>
+            <p>It is an example because I say so.</p>
+        </div>
+    </details>  
+
+<h2 id="modal-dialogs">Modal Dialog</h2>     
+<button id="open-modal" type="button">Open Modal</button>
+<dialog id="dialog"><h6>Hello Everyone!</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex neque, gravida eget leo ut, maximus sodales orci. Praesent at cursus sapien. Nullam malesuada iaculis ligula eu vulputate.</p></dialog>
+    
+<h2 id="form-inputs">Form Inputs</h2>  
+
+<h4>Text</h4> 
+<h6>Regular/Focus</h6>
+        <figure>
+            <form action="">
+                    <label for="occupation">Occupation (Required)</label>
+                    <input type="text" name="occupation" required placeholder="Job Title">
+                    <button class="hero-button">Submit</button>      
+            </form>    
+        </figure>
+        
+    <h6>Error</h6>
+        <figure>
+            <form action="">
+                <label for="occupation">Occupation</label>
+                <input class="error" type="text" name="text" required placeholder="Please try again">
+                <button class="hero-button">Submit</button>
+            </form>
+        </figure> 
+
+    <h6>Disabled</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="occupation">Occupation</label>
+                    <input type="text" name="text" required placeholder="N/A" disabled>
+                
+                <button class="disabled-button" disabled="disabled">Submit</button>
+            </form>
+        </figure> 
+
+    <h4>Textarea</h4>
+        <h6>Regular/Focus</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="occupation">Occupation (Required)</label>
+                    <textarea placeholder="Enter your occupation here" required name="textarea"></textarea>
+                
+                <button class="hero-button">Submit</button>
+            </form>
+        </figure>
+
+    <h6>Error</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="textarea">Occupation</label>
+                    <textarea class="error" placeholder="Type your text here" name="textarea"></textarea>
+                
+                <button class="hero-button">Submit</button>
+            </form>
+        </figure>
+
+    <h6>Disabled</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="textarea">Occupation</label>
+                    <textarea placeholder="N/A" name="textarea" disabled></textarea>
+                
+                <button class="disabled-button" disabled="disabled">Submit</button>
+            </form>
+        </figure>
+
+    <h4>Select</h4>
+    <h6>Regular/Focus</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="select">Please select one</label>
+                    <select name="select" required>
+                        <option value="" selected disabled hidden>Click blue arrow to select</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                
+                <button class="hero-button">Submit</button>
+            </form>
+        </figure>
+
+    <h6>Error</h6>
+        <figure>
+            <form action="">
+                
+                    <label for="select">Please select one</label>
+                    <select class="error" name="select" required>
+                        <option value="" selected disabled hidden>Click blue arrow to select</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                
+                <button class="hero-button">Submit</button>
+            </form>
+        </figure>
+
+    <h6>Disabled</h6>
+        <figure>
+            <form action="">
+            
+                    <label for="select">Please pick one</label>
+                    <select name="select" required disabled>
+                        <option value="" selected disabled hidden>N/A</option>
+                    </select>
+                
+                <button class="disabled-button" disabled="disabled">Submit</button>
+            </form>
+        </figure>
+        
+        <h2>Submit/Button</h2>
+        <figure>
+                <input type="submit">
+
+                <button>Send Form</button>
+
+        </figure>
+
+        <h2 id="navigation">Navigation</h2>
+    <div>
+        <h4>Primary Navigation</h4>
+        <nav class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a class="current-page" href="components.html">Components</a></li>
+            </ul>
+        </nav>   
+    </div>
+
+    <div>
+    <h4>Secondary Navigation</h4>
+        <nav class="secondary-nav">
+            <h5>On This Page you will find</h5> 
+            <ul>
+                <li><a href="#colors">Colors</a>
+                    <ul>
+                        <li><a href="#teal">Teal</a></li>
+                        <li><a href="#yellow">Yellow</a></li>
+                        <li><a href="#maroon">Maroon</a></li>
+                        <li><a href="#indigo">Indigo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#typography">Typography</a>
+                    <ul>
+                        <li><a href="#headings">Headings</a></li>
+                        <li><a href="#body-copy">Body Copy</a></li>
+                        <li><a href="#block-quotes">Block Quotes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h2 id="notifications">Notifications</h2>  
+    <h4>Error</h4>
+    <figure class="notification notification-error">
+        <img class="notification-image" src="./images/error.svg" alt="Error Face" height="42" width="42">
+        <p>Your form could not be submitted.</p>
+        <div class="notification-close">X</div>
+    </figure>
+    <h4>Warning</h4>
+    <figure class="notification notification-warning">
+        <img class="notification-image" src="./images/warning.svg" alt="Warning Face" height="42" width="42">
+        <p>You are missing information.</p>
+        <div class="notification-close">X</div>
+    </figure>
+    <h4>Neutral</h4>
+    <figure class="notification notification-neutral">
+        <img class="notification-image" src="./images/neutral.svg" alt="Neutral Face" height="42" width="42">
+        <p>You could complete a different form.</p>
+        <div class="notification-close">X</div>
+    </figure>
+    <h4>Success</h4>
+    <figure class="notification notification-success">
+        <img class="notification-image" src="./images/success.svg" alt="Success Face" height="42" width="42">
+        <p>Your form has been submitted!</p>
+        <div class="notification-close">X</div>
+    </figure>
+    
+    <h2 id="hero-block">Hero Block</h2>
+    <figure>
+        <a href="hero-block.html"><img src="./images/hero-block.png" alt="Hero Block"></a>
+    </figure>
+    
+    <h2 id="information-card">Information Card</h2>
+    <figure>
+        <h4>Article | Post</h4>
+        <div class="card">
+            <a href="https://www.helpscout.net/blog/psychology-of-color/"><img src="./images/article-image.png" alt="The Psychology of Color in Marketing" style="width:100%"></a>
+            <div class="card-copy">
+            <article>
+                <h5>The Psychology of Marketing and Branding</h5>
+                <p>The psychology of color as it relates to persuasion is one of the most interesting — and most controversial — aspects of marketing. At Help Scout we believe the problem has always been depth of analysis. Color theory is a topic of complexity and nuance, but splashy infographics rarely go beyond See ‘n Say levels of coverage.</p><small>Publication Date | March 1 2018</small>
+            </article>
+            </div>
+        </div>
+    </figure>
+
+    <figure>
+        <h4>Person | Profile</h4>
+        
+        <div class="card">
+            <div class="card-copy">
+                <h5>Gabriela Robles</h5> 
+                <p class="profile-card">GABRIELA_ROAG@HOTMAIL.COM</p>
+                <p class="profile-card">512-705-4739</p>
+            </div>
+            <div>
+                <a href="www.linkedin.com/in/gabriela-robles-499943aa"><img src="./images/person-image.png" alt="Gabriela Robles Linkedin Profile" style="width:100%" height="80%"></a>
+            </div>
+        </div>  
+    </figure>
+
+    <figure>
+            <h4>Call To Action</h4>
+            
+            <div class="card-cta">
+                <div>
+                    <img src="./images/arrow-down.png" alt="arrow down" style="width:100%" height="42" width="42">
+                <div class="card-copy">
+                    <h5>Click Here! You will love it!</h5> 
+                    <a href class="button-normal">Come On!</a> 
+                </div>
+                <img class="card-cta-image-second" src="./images/arrow-up.png" alt="arrow up" style="width:100%" height="42" width="42">
+                </div>  
+            </div>
+        </figure>
+     
+    <h2 id="layouts">Layouts</h2>    
+    <h4>Card Grid</h4>
+    <figure>
+        <a href="card-grid.html"><img src="./images/cards.png" alt="Card Grid"></a>
+    </figure>
+
+    <h4>Card Callouts</h4>
+    <figure>
+        <a href="card-callouts.html"><img src="./images/callouts.png" alt="Card Callouts"></a>
+    </figure>
+    
+                                            
+</main>
+         
+<footer>
+    <p>Gabriela has always been excited about combining colors and presenting projects that represent the state of mind or mood of the moment. She is Mexican by birth and Guatemalan by heart. She has spent the last few years getting her brand to be prominent in Austin, Tx.</p>
+    <nav class="primary-nav">
+        <ul>
+            <li><a href="http://facebook.com/gabbii.robles">Facebook</a></li>
+            <li><a href="linkedin.com/in/gabriela-robles-499943aa">linkedin</a></li>
+            <li><a href=“https://www.google.com”>Google Me</a></li>
+        </ul>
+    </nav>
+<p class="copyright"><small>© 2018 Attraction by Design • All Rights Reserved</small></p>    
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+    
+    const modal = document.querySelector('dialog');
+    const open = document.getElementById('open-modal');
+    
+    open.addEventListener('click', () => {
+    modal.showModal();
+    });
+    
+    modal.addEventListener('click', event => {
+    if (event.target === modal) {
+    modal.close('cancelled');
+    }
+    });
+    
+    });
+</script>
+</body>
+    
+              
+</html>
